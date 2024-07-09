@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+  background: url('https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg') center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.wrapper {
+  padding: 20px;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-weight: 200;
+  color: #333;
+}
+.plates {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+.plates li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.plates label {
+  flex: 1;
+  cursor: pointer;
+}
+.plates input {
+  display: none;
+}
+.plates input + label:before {
+  content: '⬜️';
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+.plates input:checked + label:before {
+  content: '🌮';
+}
+.add-items {
+  margin-top: 20px;
+}
+.add-items input[type="text"] {
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.add-items input[type="submit"],
+.add-items button {
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  background: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1em;
+}
+.add-items button {
+  background: #FF4136;
+  margin-top: 10px;
+}
+.delete-button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
